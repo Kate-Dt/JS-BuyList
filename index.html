@@ -2,13 +2,162 @@
 <html>
 <head lang="uk">
     <meta charset="UTF-8">
-    <title>My Page</title>
-
+    <title>BuyList</title>
 
     <link rel="stylesheet" type="text/css" href="main.css" />
+
 </head>
-<body>
-<h1>Hello World</h1> 
-<p>Hello Git</p>
+<body class="bodyClass">
+
+<div class="outer">
+    <div class="columnLeft" >
+
+        <div class="externalInputBox">
+        <div class="outerInputBox">
+        <div>
+            <input class="inputItem" type = "text" placeholder="Назва товару" size="40"/>
+            <button class="addButton" type="button" data-tooltip="додати товар">Додати</button>
+        </div>
+        </div>
+        </div>
+
+        <div  class="item">
+            <div class="rowTitle">
+                <span class="span"></span>
+                <input class="inputTitle" type="text" hidden>
+            </div>
+            <div class="alignButtons">
+
+                <div class="buttonsAndNumber">
+                    <button class="minusButton" type="button" data-tooltip="зменшити на 1" disabled>-</button>
+                    <span class="itemsCounter">1</span>
+                    <button class="plusButton" type="button" data-tooltip="збільшити на 1">+</button>
+                </div>
+
+                <div class="leftBuyButtons">
+                    <button class="bought" type="button" data-tooltip="відмітити як куплений">Куплено</button>
+                    <button class="delete" type="button" data-tooltip="видалити зі списку">x</button>
+                </div>
+            </div>
+        </div>
+
+<div  class="item">
+        <div class="rowTitle">
+            <span class="span">Помідори</span>
+            <input class="inputTitle" type="text" hidden>
+        </div>
+    <div class="alignButtons">
+
+    <div class="buttonsAndNumber">
+            <button class="minusButton" type="button" data-tooltip="зменшити на 1" disabled>-</button>
+        <span class="itemsCounter">1</span>
+        <button class="plusButton" type="button" data-tooltip="збільшити на 1">+</button>
+    </div>
+
+    <div class="leftBuyButtons">
+        <button class="bought" type="button" data-tooltip="відмітити як куплений">Куплено</button>
+        <button class="delete" type="button" data-tooltip="видалити зі списку">x</button>
+    </div>
+</div>
+</div>
+
+        <div  class="item">
+            <div class="rowTitle">
+                <span class="span">Печиво</span>
+                <input class="inputTitle" type="text" hidden>
+            </div>
+            <div class="alignButtons">
+            <div class="buttonsAndNumber">
+                <button class="minusButton" type="button" data-tooltip="зменшити на 1" disabled>-</button>
+                <span class="itemsCounter">1</span>
+                <button class="plusButton" type="button" data-tooltip="збільшити на 1">+</button>
+            </div>
+
+            <div class="leftBuyButtons">
+                <button class="bought" type="button" data-tooltip="відмітити як куплений">Куплено</button>
+                <button class="delete" type="button" data-tooltip="видалити зі списку">x</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="item">
+
+            <div class="rowTitle">
+                <span class="span">Сир</span>
+                <input class="inputTitle" type="text" hidden>
+            </div>
+
+            <div class="alignButtons">
+            <div class="buttonsAndNumber">
+                <button class="minusButton" type="button" data-tooltip="зменшити на 1" disabled>-</button>
+                <span class="itemsCounter">1</span>
+                <button class="plusButton" type="button" data-tooltip="збільшити на 1">+</button>
+            </div>
+
+            <div class="leftBuyButtons">
+                <button class="bought" type="button" data-tooltip="відмітити як куплений">Куплено</button>
+                <button class="delete" type="button" data-tooltip="видалити зі списку">x</button>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="columnRight" >
+
+        <div class="leftTitle">
+            <H3>Залишилося</H3>
+        </div>
+
+        <div class="boughtSegment">
+        <div class="boughtItem">
+            <span class="title">Печиво</span>
+            <span class="roundLabel">1</span>
+        </div>
+            <div class="boughtItem">
+                <span class="title">Сир</span>
+                <span class="roundLabel">1</span>
+            </div>
+            <div class="boughtItem">
+                <span class="title">Помідори</span>
+                <span class="roundLabel">1</span>
+            </div>
+        </div>
+
+        <div class="boughtTitle">
+            <H3>Куплено</H3>
+        </div>
+
+        <div class="boughtItemsList">
+
+        </div>
+
+
+    </div>
+
+
+
+
+</div>
+
+
+<div class="badge">
+    <div class="badgeMainInfo">
+        <span class="buyList">Buy List</span>
+    </div>
+
+    <div class="additionalInfo">
+    <div class="aboutMe">
+        <span class="createdBy">Created by:</span>
+        <span class="myName">Dotsiuk K.</span>
+    </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/Jsjs.js"></script>
+
+
 </body>
 </html>
